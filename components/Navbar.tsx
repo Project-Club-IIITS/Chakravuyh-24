@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import styles from './styles/navbar.module.css';
 
 
 export function Navbar({ className }: { className?: string }) {
