@@ -1,5 +1,6 @@
-"use client";
-import React, { useState, useRef, useEffect } from "react";
+'use client';
+
+import React, { useEffect, useState } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
 export function UpcomingEvents({ day }: { day: number }) {
@@ -19,7 +20,7 @@ export function UpcomingEvents({ day }: { day: number }) {
       <h1 className="text-neutral-300 font-bold text-3xl px-12">DAY {day.toString()}</h1>
       <LayoutGrid cards={events.map((event) => ({
         id: event.id,
-        content: <EventSkeleton event={event} />, // Dynamically created content for each event
+        content: <EventSkeleton event={event} />,
         className: "col-span-1",
         thumbnail: event.thumbnail,
       }))} />
