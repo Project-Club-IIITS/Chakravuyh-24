@@ -16,6 +16,11 @@ export default function Home() {
       <section id="register">
         <HeroScrollDemo />
       </section>
+      <section id="upcoming-events">
+        <UpcomingEvents day={1} />
+        <UpcomingEvents day={2} />
+        <UpcomingEvents day={3} />
+      </section>
       <section id="past-events">
         <PastEvents />
       </section>
