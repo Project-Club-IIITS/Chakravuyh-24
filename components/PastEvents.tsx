@@ -1,20 +1,10 @@
 'use client';
-import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from "@tabler/icons-react";
 import Image from "next/image";
 
 export function PastEvents() {
-    const [events, setEvents] = useState<any[]>([]);
+    const [events, setEvents] = useState<{ title: string; description: string; imageUrl: string }[]>([]);
 
     useEffect(() => {
         fetch("/past_events.json")

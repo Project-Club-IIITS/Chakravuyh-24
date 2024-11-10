@@ -1,5 +1,6 @@
 import React from "react";
 import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import Image from "next/image"; // Import the Image component
 
 const Footer: React.FC = () => {
     return (
@@ -7,10 +8,13 @@ const Footer: React.FC = () => {
             <div className="container px-6 py-4 mx-auto mt-9">
                 <div className="flex flex-col items-center text-center">
                     <a href="#">
-                        <img
+                        {/* Replace <img> with <Image> for optimization */}
+                        <Image
                             className="w-auto h-16"
-                            src="IOTAxGDG.png"
+                            src="/IOTAxGDG.png" // Make sure to provide a correct path
                             alt="Logo"
+                            width={100} // Provide a width (adjust as necessary)
+                            height={64} // Provide a height (adjust as necessary)
                         />
                     </a>
 
@@ -33,7 +37,6 @@ const Footer: React.FC = () => {
                     </p>
 
                     <div className="flex items-center mt-1 mx-10 sm:mt-0 space-x-8">
-                        {}
                         <div className="flex flex-col items-center mx-4">
                             <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">IOTA</h3>
                             <div className="flex space-x-4">
@@ -58,10 +61,8 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
 
-                        {}
                         <div className="text-gray-500 text-2xl">X</div>
 
-                        {}
                         <div className="flex flex-col items-center mx-4">
                             <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">GDG</h3>
                             <div className="flex space-x-4">

@@ -3,17 +3,24 @@
 import React, { useEffect, useState } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
+interface Event {
+  id: number;
+  title: string;
+  description: string;
+  thumbnail: string;
+}
+
 export function UpcomingEvents({ day }: { day: number }) {
-  const [events, setEvents] = useState<any[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
-    fetch("/upcoming_events.json")
+    fetch(`/upcoming_events_day${day}.json`)
       .then((response) => response.json())
-      .then((data) => {
-        setEvents(data);
-      })
+      .then((data: Event[]) => {
+      setEvents(data);
+})
       .catch((error) => console.error("Error fetching events data:", error));
-  }, []);
+  }, [day]);
 
   return (
     <div className="h-screen py-20 w-full">
@@ -28,12 +35,11 @@ export function UpcomingEvents({ day }: { day: number }) {
   );
 }
 
-const EventSkeleton = ({ event }: { event: any }) => {
+const EventSkeleton = ({ event }: { event: Event }) => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">{event.title}</p>
-      <p className="font-normal text-base text-white"></p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">{event.description}</p>
+      <p className="font-normal text-base text-white">{event.description}</p>
     </div>
   );
 };

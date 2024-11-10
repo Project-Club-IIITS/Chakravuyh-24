@@ -1,12 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { div } from "framer-motion/client";
 
 export function HeroHighlightDemo() {
     return (
         <div className="relative w-full h-screen overflow-hidden">
-            {}
             <video
                 autoPlay
                 loop
@@ -18,10 +16,8 @@ export function HeroHighlightDemo() {
                 Your browser does not support the video tag.
             </video>
 
-            {}
             <div className="relative z-10 grid place-items-center h-full bg-black bg-opacity-50 mt-[-30px]">
                 <HeroHighlight>
-                    {}
                     <motion.h1
                         initial={{
                             opacity: 0,
@@ -40,7 +36,6 @@ export function HeroHighlightDemo() {
                         CHAKRAVYUH
                     </motion.h1>
 
-                    {}
                     <div className="absolute top-15/16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-7 whitespace-nowrap">
                         <motion.div
                             initial={{

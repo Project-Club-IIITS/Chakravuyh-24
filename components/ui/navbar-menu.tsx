@@ -17,14 +17,12 @@ export const MenuItem = ({
   setActive,
   active,
   item,
-  href,
   onClick,
   children,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
-  href?: string;
   onClick?: () => void;
   children?: React.ReactNode;
 }) => {
@@ -110,7 +108,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: React.ComponentProps<typeof Link>) => {
   return (
     <Link
       {...rest}
