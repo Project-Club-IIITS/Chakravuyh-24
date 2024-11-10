@@ -3,15 +3,22 @@
 import React, { useEffect, useState } from "react";
 import { LayoutGrid } from "@/components/ui/layout-grid";
 
+interface Event {
+  id: number;
+  title: string;
+  description: string;
+  thumbnail: string;
+}
+
 export function UpcomingEvents({ day }: { day: number }) {
-  const [events, setEvents] = useState<any[]>([]);
+  const [events, setEvents] = useState<Event[]>([]);
 
   useEffect(() => {
     fetch(`/upcoming_events_day${day}.json`)
       .then((response) => response.json())
-      .then((data) => {
-        setEvents(data);
-      })
+      .then((data: Event[]) => {
+      setEvents(data);
+})
       .catch((error) => console.error("Error fetching events data:", error));
   }, [day]);
 
@@ -28,7 +35,7 @@ export function UpcomingEvents({ day }: { day: number }) {
   );
 }
 
-const EventSkeleton = ({ event }: { event: any }) => {
+const EventSkeleton = ({ event }: { event: Event }) => {
   return (
     <div>
       <p className="font-bold md:text-4xl text-xl text-white">{event.title}</p>
