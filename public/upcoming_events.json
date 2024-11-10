@@ -1,27 +1,28 @@
 [
     {
       "id": 1,
-      "title": "House in the Woods",
-      "description": "A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life.",
+      "title": "Web/App",
       "thumbnail": "/ChariotRace.png"
     },
     {
       "id": 2,
-      "title": "House Above the Clouds",
-      "description": "Perched high above the world, this house offers breathtaking views and a unique living experience.",
+      "title": "DevOps",
       "thumbnail": "/ArcheryContest.png"
     },
     {
       "id": 3,
-      "title": "Greens All Over",
-      "description": "A house surrounded by greenery and nature’s beauty. It’s the perfect place to relax, unwind, and enjoy life.",
+      "title": "Game Dev",
       "thumbnail": "/SwordFighting.png"
     },
     {
       "id": 4,
-      "title": "Rivers are Serene",
-      "description": "A house by the river is a place of peace and tranquility. It’s the perfect place to relax, unwind, and enjoy life.",
+      "title": "Backend",
       "thumbnail": "/HorseRiding.png"
-    }
+    },
+    {
+      "id": 5,
+      "title": "AIML & DS",
+      "thumbnail": "/HorseRiding.png"
+    },
   ]
   
