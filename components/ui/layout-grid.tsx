@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Info } from "lucide-react";
+import Image from 'next/image';
 
 type Card = {
     id: number;
@@ -136,11 +137,13 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
                                 onClick={() => handleCardClick(card.id)}
                             >
                                 {/* Image */}
-                                <img
+                                <Image
                                     src={card.thumbnail}
                                     alt="card thumbnail"
-                                    className="absolute inset-0 w-full h-full object-cover object-center 
-                                        transition-transform duration-700 group-hover:scale-110"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    objectPosition="center"
+                                    className="transition-transform duration-700 group-hover:scale-110"
                                 />
 
                                 {/* Overlay */}
