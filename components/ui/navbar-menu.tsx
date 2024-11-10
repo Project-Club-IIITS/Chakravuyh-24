@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { LinkProps } from "next/link";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -17,14 +18,12 @@ export const MenuItem = ({
   setActive,
   active,
   item,
-  href,
   onClick,
   children,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
-  href?: string;
   onClick?: () => void;
   children?: React.ReactNode;
 }) => {
@@ -110,7 +109,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: React.ComponentProps<typeof Link>) => {
   return (
     <Link
       {...rest}
