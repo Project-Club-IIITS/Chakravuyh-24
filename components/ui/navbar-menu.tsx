@@ -46,11 +46,9 @@ export const MenuItem = ({
         >
           {active === item && (
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
-            
-                <motion.div layout className="w-max h-full p-4">
-                  {children}
-                </motion.div>
-             
+              <motion.div layout className="w-max h-full p-4">
+                {children}
+              </motion.div>
             </div>
           )}
         </motion.div>
@@ -108,7 +106,10 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: React.ComponentProps<typeof Link>) => {
+export const HoveredLink = ({
+  children,
+  ...rest
+}: React.ComponentProps<typeof Link>) => {
   return (
     <Link
       {...rest}
@@ -128,7 +129,12 @@ export const MainComponent = () => {
 
   return (
     <Menu setActive={setActive}>
-      <MenuItem setActive={setActive} active={active} item="Home" onClick={handleScrollToTop}>
+      <MenuItem
+        setActive={setActive}
+        active={active}
+        item="Home"
+        onClick={handleScrollToTop}
+      >
         Home
       </MenuItem>
       <MenuItem setActive={setActive} active={active} item="Register">

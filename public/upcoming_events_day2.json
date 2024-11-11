@@ -1,38 +1,32 @@
 [
-    {
-      "id": 1,
-      "title": "Revival Battle 1",
-      "thumbnail": "/ChariotRace.png"
-    },
-    {
-      "id": 2,
-      "title": "Cyber Sec",
-      "thumbnail": "/ArcheryContest.png"
-    },
-    {
-      "id": 3,
-      "title": "Design & PR",
-      "thumbnail": "/SwordFighting.png"
-    },
-    {
-      "id": 4,
-      "title": "Web/App",
-      "thumbnail": "/ChariotRace.png"
-    },
-    {
-      "id": 5,
-      "title": "AIML & DS",
-      "thumbnail": "/ArcheryContest.png"
-    },
-    {
-        "id": 6,
-        "title": "Bonus Challenge 1",
-        "thumbnail": "/SwordFighting.png"
-      }
-  ]
-  
-
-
-
-  
-  
+  {
+    "id": 1,
+    "title": "Revival Battle 1",
+    "thumbnail": "/ChariotRace.png"
+  },
+  {
+    "id": 2,
+    "title": "Cyber Sec",
+    "thumbnail": "/ArcheryContest.png"
+  },
+  {
+    "id": 3,
+    "title": "Design & PR",
+    "thumbnail": "/SwordFighting.png"
+  },
+  {
+    "id": 4,
+    "title": "Web/App",
+    "thumbnail": "/ChariotRace.png"
+  },
+  {
+    "id": 5,
+    "title": "AIML & DS",
+    "thumbnail": "/ArcheryContest.png"
+  },
+  {
+    "id": 6,
+    "title": "Bonus Challenge 1",
+    "thumbnail": "/SwordFighting.png"
+  }
+]

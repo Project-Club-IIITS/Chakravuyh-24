@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import Image from "next/image"; // Import the Image component
 
 const Footer: React.FC = () => {
@@ -38,7 +38,9 @@ const Footer: React.FC = () => {
 
                     <div className="flex items-center mt-1 mx-10 sm:mt-0 space-x-8">
                         <div className="flex flex-col items-center mx-4">
-                            <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">IOTA</h3>
+                            <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">
+                                IOTA
+                            </h3>
                             <div className="flex space-x-4">
                                 <a
                                     href="https://www.linkedin.com/company/iota-iiits/"
@@ -64,7 +66,9 @@ const Footer: React.FC = () => {
                         <div className="text-gray-500 text-2xl">X</div>
 
                         <div className="flex flex-col items-center mx-4">
-                            <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">GDG</h3>
+                            <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-400 mb-2">
+                                GDG
+                            </h3>
                             <div className="flex space-x-4">
                                 <a
                                     href="https://www.linkedin.com/company/gdg-iiits/"
