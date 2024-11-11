@@ -1,28 +1,27 @@
 [
-    {
-      "id": 1,
-      "title": "Web/App",
-      "thumbnail": "/ChariotRace.png"
-    },
-    {
-      "id": 2,
-      "title": "DevOps",
-      "thumbnail": "/ArcheryContest.png"
-    },
-    {
-      "id": 3,
-      "title": "Game Dev",
-      "thumbnail": "/SwordFighting.png"
-    },
-    {
-      "id": 4,
-      "title": "Backend",
-      "thumbnail": "/HorseRiding.png"
-    },
-    {
-      "id": 5,
-      "title": "AIML & DS",
-      "thumbnail": "/ArcheryContest.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Web/App",
+    "thumbnail": "/ChariotRace.png"
+  },
+  {
+    "id": 2,
+    "title": "DevOps",
+    "thumbnail": "/ArcheryContest.png"
+  },
+  {
+    "id": 3,
+    "title": "Game Dev",
+    "thumbnail": "/SwordFighting.png"
+  },
+  {
+    "id": 4,
+    "title": "Backend",
+    "thumbnail": "/HorseRiding.png"
+  },
+  {
+    "id": 5,
+    "title": "AIML & DS",
+    "thumbnail": "/ArcheryContest.png"
+  }
+]

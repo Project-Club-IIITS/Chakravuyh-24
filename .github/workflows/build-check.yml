@@ -1,0 +1,37 @@
+name: Check Next.js Build and Code Formatting on PR
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            # Step 1: Check out the code from the repository
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            # Step 2: Set up Node.js environment
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "18"
+
+            # Step 3: Install dependencies
+            - name: Install dependencies
+              run: npm install
+
+            # Step 4: Auto-format code with Prettier
+            - name: Auto-format code with Prettier
+              run: npm run prettier
+
+            # Step 5: Check code formatting with Prettier
+            - name: Check code format with Prettier
+              run: npm run prettier-check
+
+            # Step 6: Build the Next.js application
+            - name: Build Next.js app
+              run: npm run build

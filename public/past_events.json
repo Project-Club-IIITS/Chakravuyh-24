@@ -1,37 +1,37 @@
 [
-    {
-        "title": "The Dawn of Innovation",
-        "description": "Explore the birth of groundbreaking ideas and inventions.",
-        "imageUrl": "/ArcheryContest.png"
-    },
-    {
-        "title": "The Digital Revolution",
-        "description": "Dive into the transformative power of technology.",
-        "imageUrl": "/ChariotRace.png"
-    },
-    {
-        "title": "The Art of Design",
-        "description": "Discover the beauty of thoughtful and functional design.",
-        "imageUrl": "/HorseRiding.png"
-    },
-    {
-        "title": "The Power of Communication",
-        "description": "Understand the impact of effective communication in our lives.",
-        "imageUrl": "/SwordFighting.png"
-    },
-    {
-        "title": "The Pursuit of Knowledge",
-        "description": "Join the quest for understanding and enlightenment.",
-        "imageUrl": "/ArcheryContest.png"
-    },
-    {
-        "title": "The Joy of Creation",
-        "description": "Experience the thrill of bringing ideas to life.",
-        "imageUrl": "/ArcheryContest.png"
-    },
-    {
-        "title": "The Spirit of Adventure",
-        "description": "Embark on exciting journeys and thrilling discoveries.",
-        "imageUrl": "/ArcheryContest.png"
-    }
+  {
+    "title": "The Dawn of Innovation",
+    "description": "Explore the birth of groundbreaking ideas and inventions.",
+    "imageUrl": "/ArcheryContest.png"
+  },
+  {
+    "title": "The Digital Revolution",
+    "description": "Dive into the transformative power of technology.",
+    "imageUrl": "/ChariotRace.png"
+  },
+  {
+    "title": "The Art of Design",
+    "description": "Discover the beauty of thoughtful and functional design.",
+    "imageUrl": "/HorseRiding.png"
+  },
+  {
+    "title": "The Power of Communication",
+    "description": "Understand the impact of effective communication in our lives.",
+    "imageUrl": "/SwordFighting.png"
+  },
+  {
+    "title": "The Pursuit of Knowledge",
+    "description": "Join the quest for understanding and enlightenment.",
+    "imageUrl": "/ArcheryContest.png"
+  },
+  {
+    "title": "The Joy of Creation",
+    "description": "Experience the thrill of bringing ideas to life.",
+    "imageUrl": "/ArcheryContest.png"
+  },
+  {
+    "title": "The Spirit of Adventure",
+    "description": "Embark on exciting journeys and thrilling discoveries.",
+    "imageUrl": "/ArcheryContest.png"
+  }
 ]
